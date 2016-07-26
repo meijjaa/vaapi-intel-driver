@@ -44,6 +44,10 @@ LOCAL_SRC_FILES :=              \
 	gen9_mfc.c		\
 	gen9_mfc_hevc.c		\
 	gen9_mfd.c		\
+	gen9_vdenc.c		\
+	gen9_vp9_const_def.c	\
+	gen9_vp9_encoder.c	\
+	gen9_vp9_encoder_kernels.c	\
 	gen75_picture_process.c	\
 	gen75_vme.c		\
 	gen75_vpp_gpe.c  	\
@@ -63,6 +67,7 @@ LOCAL_SRC_FILES :=              \
 	i965_gpe_utils.c	\
 	i965_post_processing.c	\
 	gen8_post_processing.c	\
+	i965_yuv_coefs.c	\
 	i965_render.c		\
 	i965_vpp_avs.c		\
 	gen8_render.c		\
@@ -72,7 +77,8 @@ LOCAL_SRC_FILES :=              \
 	intel_driver.c		\
 	intel_memman.c		\
 	object_heap.c		\
-	intel_media_common.c		\
+	intel_media_common.c	\
+	vp9_probs.c		\
 	$(NULL)
 
 GEN := $(LOCAL_PATH)/intel_version.h
